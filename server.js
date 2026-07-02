@@ -9,11 +9,7 @@ const drawsRoutes = require("./routes/draws");
 
 const app = express();
 
-app.use(cors({
-  origin: "*",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-}));
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 app.use("/api/games", gamesRoutes);
