@@ -1,0 +1,17 @@
+{
+  "name": "lonato-backend",
+  "version": "1.0.0",
+  "description": "Backend API - Lonato Module 1 (App mobile parieurs)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
