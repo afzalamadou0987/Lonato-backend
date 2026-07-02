@@ -6,9 +6,9 @@ const gamesRoutes = require("./routes/games");
 const ticketsRoutes = require("./routes/tickets");
 const paymentRoutes = require("./routes/payment");
 const drawsRoutes = require("./routes/draws");
+const authRoutes = require("./routes/auth");
 
 const app = express();
-
 app.use(cors({ origin: "*" }));
 app.use(express.json());
 
@@ -16,6 +16,7 @@ app.use("/api/games", gamesRoutes);
 app.use("/api/tickets", ticketsRoutes);
 app.use("/api/payment", paymentRoutes);
 app.use("/api/draws", drawsRoutes);
+app.use("/api/auth", authRoutes);
 
 app.get("/", (req, res) => res.send("Lonato Backend - Module 1 API ✅"));
 
